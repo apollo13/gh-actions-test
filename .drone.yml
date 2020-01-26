@@ -1,0 +1,20 @@
+kind: pipeline
+type: docker
+name: backend
+
+steps:
+- name: build
+  image: ubuntu
+  commands:
+  - echo "Test 33"
+
+---
+kind: pipeline
+type: docker
+name: frontend
+
+steps:
+- name: build
+  image: ubuntu
+  commands:
+  - echo "Test"
